@@ -1,16 +1,18 @@
-from souhaiel import GestionListe
+from souhaiel import GestionListe;
+from dhia import Calculs
 
 def main():
-    ma_liste = ["a", "b", "c", "d", "e"]
-    gestion_liste = GestionListe(ma_liste)
+    
 
-    print("Affichage initial de la liste :")
-    gestion_liste.afficher_liste()
 
-    gestion_liste.modifier_liste(2, "z")
 
-    print("\nAffichage de la liste après modification :")
-    gestion_liste.afficher_liste()
+    # Test de la classe Calculs
+    tableau = [10, 20, 30, 40, 50]
+    print("\nSomme:", Calculs.calculerSomme(tableau))
+    print("Moyenne:", Calculs.calculerMoyenne(tableau))
+
+
+
 
 if __name__ == "__main__":
     main()
